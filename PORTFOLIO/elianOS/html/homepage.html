@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/elianOS/css/homestyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href="https://api.fontshare.com/v2/css?f[]=zodiak@800&f[]=clash-grotesk@600&f[]=satoshi@1,2&f[]=chillax@500&f[]=tanker@400&f[]=kola@400&f[]=array@400&f[]=styro@400&f[]=general-sans@400&f[]=switzer@700&display=swap" rel="stylesheet">
+    </head>
+    <header><h2>ElianOS</h2></header>
+    <body>
+        <div class="Elijah">Elijah's</div>
+        <div class="DelaC">Portfolio</div>
+        <div class="icon-container">
+            <img src="/elianOS/html/personal-data.png" alt="About Me" class="icon" data-popper="about">
+            <img src="/elianOS/html/projects-icon.png" alt="Services" class="icon" data-popper="services">
+            <img src="/elianOS/html/resume.png" alt="Resume" class="icon" data-popper="resume">
+            <img src="/elianOS/html/phone.png" alt="Contact" class="icon" data-popper="contact">
+          </div>
+        
+          <!-- Overlay -->
+          <div class="overlay" id="overlay"></div>
+        
+          <!-- Poppers -->
+          <div class="popper" id="about">
+            <button class="close-btn">&times;</button>
+            <h2>About Me</h2>
+            <img src="/elianOS/html/1x1.png" class ="profile">
+            <h1>Elijah Dela Cruz</h1>
+            <p>I am a 17-year-old ICT student currently in grade 12, passionate about technology and creativity. Over the past year, I’ve dedicated myself to learning HTML and CSS, building a strong foundation in web development. As I look ahead to college, I plan to pursue a degree in Computer Science to deepen my understanding of programming and technology. Beyond coding, I enjoy exploring graphic design, using tools like Canva to bring my creative ideas to life. My interests reflect a blend of technical skill and artistic expression, which I hope to continue developing in my future studies and projects.</p>
+        
+          </div>
+        
+          <div class="popper" id="services">
+            <button class="close-btn">&times;</button>
+            <h2>Services</h2>
+            <div class = "services-icon">
+            <img src="/elianOS/html/html-icon.png" alt="html" class="serv">
+            <img src="/elianOS/html/css-icon.png" alt="css" class="serv">
+            <img src="/elianOS/html/javascript-icon.png" alt="javascript" class="serv">
+            <img src="/elianOS/html/canva-icon.png" alt = "canva" class="serv">
+            </div>
+          </div>
+        
+          <div class="popper" id="resume">
+            <button class="close-btn">&times;</button>
+            <h2>Resume</h2>
+            <iframe src="/elianOS/html/Resume.pdf" type="application/pdf"></iframe>
+          </div>
+        
+          <div class="popper" id="contact">
+            <button class="close-btn" onclick="closePopper()">&times;</button>
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+              <p><strong>Email:</strong> <a href="mailto:elijahdcruz0112@gmail.com">elijahdcruz0112@gmail.com</a></p>
+              <p><strong>Facebook:</strong> <a href="https://www.facebook.com/ElijahDelaCruz" target="_blank">Elijah Dela Cruz</a></p>
+              <p><strong>Instagram:</strong> <a href="https://www.instagram.com/ej.dlcrz" target="_blank">ej.dlcrz</a></p>
+              <p><strong>GitHub:</strong> <a href="https://github.com/Eli-enism" target="_blank">Eli-enism</a></p>
+            </div>
+          </div>
+    <div class="taskbar"></div>
+    <a href="log.html">
+      <button class="Btn">
+      <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
+      <div class="text">Logout</div>
+      </button>
+    </a>
+        <script src="/elianOS/jscript/popper.js"></script>
+    </body>
+</html>

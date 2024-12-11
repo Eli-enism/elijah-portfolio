@@ -1,0 +1,161 @@
+header h2 {
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: bold; 
+    text-align: center;
+    padding: 1px;
+    margin: 0;
+    justify-content: center;
+    background-color: #cacaca;
+    z-index: 11;
+}
+/* Prevent the page from scaling */
+html, body {
+    background: #e9e1e1;
+    height: 100%;       /* Ensure body takes full height */
+    margin: 0;          /* Remove default margin */
+    overflow: hidden;     /* Prevent scrolling */
+}
+.blur {
+    width: 100%;
+    height: 100%;
+    --color: #cacaca;
+    background-color: e9e1e1;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+  }
+#clock {
+    font-size: 120px;
+    font-family: 'Switzer', sans-serif;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 50%;
+    padding: 15px;
+    text-align: center;
+    z-index: 100;
+}
+#date {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: bold; 
+    font-style: italic;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 37%;
+    left: 50%;
+    padding: 15px;
+    text-align: center;
+    z-index: 110;
+}
+.profile-image {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+    z-index: 12;
+}
+h1{
+    font-size: 15px;
+    font-family: 'Satoshi', sans-serif;
+    position: fixed;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#loadButton {
+    display: flex;
+    position: fixed;
+    top: 73%;
+    left: 50%;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    padding: 6px 50px;
+    gap: 15px;
+    background-color: #181717;
+    outline: 3px #181717 solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+    z-index: 20;
+    transition: background-color 0.3s;
+  }
+  
+  #loadButton .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+  }
+  #loadButton:hover {
+    background-color: transparent;
+  }
+  
+  #loadButton:hover .text {
+    color: #181717;
+  }
+
+  .loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+    z-index: 899;
+  }
+  
+  .loader-overlay.visible {
+    opacity: 1;
+    visibility: visible; 
+  }
+  .loader-overlay.hidden {
+    opacity: 0; 
+    visibility: hidden;
+  }
+
+  .loader {
+    border: 8px solid rgba(255, 255, 255, 0.2);
+    border-top: 8px solid white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    z-index: 900;
+  }
+  .loader-message {
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Satoshi', sans-serif;
+    position: fixed;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 901;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
